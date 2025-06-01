@@ -6,7 +6,7 @@ import Logo4 from "../../assets/logo4.png"
 export default function Logo() {
     return <>
      <Container>
-        <div className="py-[117px] flex justify-between">
+        <div className="md:py-[117px] flex md:flex-row flex-col md:items-start items-center justify-between">
             <img src={Logo1} alt="" />
             <img src={Logo2} alt="" />
             <img src={Logo3} alt="" />

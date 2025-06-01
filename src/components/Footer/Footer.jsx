@@ -25,12 +25,12 @@ export default function Footer() {
     <>
       <div className="bg-[#1F1F1F]">
         <Container>
-          <div className="pt-[149px] pb-[170px] grid items-center md:grid-cols-[334px_1fr]">
-            <div>
+          <div className="pt-6 md:pt-[149px] pb-6 md:pb-[170px] grid items-center md:grid-cols-[334px_1fr]">
+            <div className="flex flex-col items-center md:items-start">
               <a href="#">
                 <img src={logo} alt="" />
               </a>
-              <div className="mt-[33px]">
+              <div className="mt-[33px] flex flex-col items-center md:items-start">
                 <p className="font-primary font-normal text-[14px] text-white flex items-center">
                   <TbMailCheck className="inline mr-[5px]" />
                   mail@yourcompany.com
@@ -59,7 +59,7 @@ export default function Footer() {
                 </div>
               </div>
             </div>
-            <div className="flex justify-between ml-[145px]">
+            <div className="flex flex-col md:flex-row items-center md:items-start text-center md:text-start mt-6 md:mt-0 justify-between  md:ml-[145px]">
               <div className="flex gap-x-[100px]">
                 {navData.map((items) => (
                   <div>
@@ -80,7 +80,7 @@ export default function Footer() {
                 ))}
               </div>
               <div>
-                <p className="font-primary font-bold text-[16px] text-white mb-[21px]">
+                <p className="font-primary font-bold text-[16px] mt-6 md:mt-0 text-white mb-[21px]">
                   Certificate
                 </p>
                 <div className="flex gap-x-[5px]">

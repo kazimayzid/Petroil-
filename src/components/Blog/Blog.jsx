@@ -28,12 +28,12 @@ export default function Blog() {
   ];
   return (
     <>
-      <div className="bg-[#F0F0F0] pt-[110px] pb-[162px]">
+      <div id="blog" className="bg-[#F0F0F0] pt-[110px] pb-4 md:pb-[162px]">
         <Container>
-          <div className="flex justify-between">
+          <div className="md:flex text-center md:text-start md:gap-y-0 justify-between">
             {blogData.map((items) => (
               <div
-                className="relative bg-center bg-cover bg-no-repeat"
+                className="relative bg-center bg-cover bg-no-repeat mb-2 md:mb-0"
                 style={{ backgroundImage: `url(${items.img})` }}
               >
                 <div className="absolute inset-0 bg-black/50"></div>
@@ -48,8 +48,8 @@ export default function Blog() {
               </div>
             ))}
           </div>
-          <div className="flex justify-end mt-[28px]">
-            <p className="font-primary font-bold text-[16px] text-black flex items-center">
+          <div className="flex md:justify-end justify-center mt-[28px] ">
+            <p className="font-primary font-bold text-[16px] text-black flex items-center  ">
               MORE FROM THE BLLOG <IoIosArrowForward className="text-black inline" />
             </p>
           </div>
