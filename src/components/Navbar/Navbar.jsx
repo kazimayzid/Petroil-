@@ -7,7 +7,6 @@ import { RxCross2 } from "react-icons/rx";
 export default function Navbar() {
   const [show, setshow] = useState(false);
 
-
   const navList = [
     { title: "Home", link: "#home" },
     { title: "About", link: "#about" },
@@ -38,7 +37,7 @@ export default function Navbar() {
               <div className="flex gap-x-[47px]">
                 {navList.map((items) => (
                   <a
-                    className="font-primary font-semibold text-[16px] text-white"
+                    className="font-primary font-semibold text-[16px] text-white active:underline focus:underline"
                     href={items.link}
                   >
                     {items.title}
@@ -77,27 +76,26 @@ export default function Navbar() {
           </div>
         </div>
         {show && (
-        <div className="flex flex-col gap-y-[17px] items-center bg-secondary py-5 w-full">
-          <div className="flex flex-col items-center gap-y-[17px]">
-            {navList.map((items) => (
-              <a
-                className="font-primary font-semibold text-[16px] text-white border-b-1"
-                href={items.link}
-              >
-                {items.title}
-              </a>
-            ))}
+          <div className="flex flex-col gap-y-[17px] items-center bg-secondary py-5 w-full">
+            <div className="flex flex-col items-center gap-y-[17px]">
+              {navList.map((items) => (
+                <a
+                  className="font-primary font-semibold text-[16px] text-white border-b-1"
+                  href={items.link}
+                >
+                  {items.title}
+                </a>
+              ))}
+            </div>
+            <button
+              href="#contact"
+              className="font-primary font-semibold text-[16px] text-white px-[32px] py-[13px] border-white border-2"
+            >
+              CONTACT
+            </button>
           </div>
-          <button
-            href="#contact"
-            className="font-primary font-semibold text-[16px] text-white px-[32px] py-[13px] border-white border-2"
-          >
-            CONTACT
-          </button>
-        </div>
-      )}
+        )}
       </div>
-      
     </>
   );
 }
