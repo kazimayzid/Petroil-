@@ -1,7 +1,7 @@
 import Container from "../Container/Container";
-import Blogimg1 from "../../assets/blogimg1.png";
-import Blogimg2 from "../../assets/blogimg2.png";
-import Blogimg3 from "../../assets/blogimg3.png";
+import Blogimg1 from "../../assets/blogImg1.png";
+import Blogimg2 from "../../assets/blogImg2.png";
+import Blogimg3 from "../../assets/blogImg3.png";
 import { IoIosArrowForward } from "react-icons/io";
 import mapsImg from "../../assets/maps.png"
 
